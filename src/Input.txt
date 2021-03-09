@@ -1,0 +1,21 @@
+begin
+	a:=0;
+	b:=13;
+	e:= -7;
+	if a>b and b>e or not b<=e then
+		f:=7;
+		if a>f then
+			if a+b>e then
+				d:=a+16+-(d*7);
+				if (not b!=a) or not (true) then
+					c:=c+(c+c)*-c;
+		cdf_RSDf4:=4+(e+a)*(-6*d+-ac1);
+		if vfe!=8 or false and not cx<=71+7*(1+-4*-3) then
+			g:=vfe*(-0);
+			if gRTCS==ac+f then
+				if (not not not not true and not false) then
+					f:=2+(5)+-8;
+					a:=2;
+			if false and false then
+				c:=3
+end

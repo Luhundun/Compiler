@@ -1,0 +1,117 @@
+JFDML JFormDesigner: "7.0.1.0.272" Java: "11.0.9.1" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.FlowLayout ) ) {
+				name: "panel1"
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "openGrammer"
+					"text": "打开文法文件"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "openGrammerActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "loadGrammer"
+					"text": "加载文法文件"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "loadGrammerActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "clear"
+					"text": "查看注意事项"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "clearActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "openProgram"
+					"text": "打开源文件"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "openProgramActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "compile"
+					"text": "编译"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "compileActionPerformed", true ) )
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "First"
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq {space :::p, par l {comp scrollPane5::l:p:290:p, par t:l::p {comp label6::l::289:x, comp scrollPane4::l::289:x}, par t:l::p {comp l1::l::289:x, comp scrollPane6::l::289:x}, comp label2::l:p:289:p}, space u:::p, par l {comp label1:::p::p, comp scrollPane3:::p:245:p}, space :::p, comp panel4:::::x, space :::p}}"
+				"$verticalGroup": "par l {seq {par l {seq t {par b {comp label2::b:p::p, comp label1::b:p::p}, space :::p, par l {seq {comp scrollPane6:::p:83:p, space :::p, comp l1:::p::p, space :p:12:p, comp scrollPane4:::p:82:p, space u:::p, comp label6:::p::p, space :::p, comp scrollPane5::::504:x}, comp scrollPane3::::739:x}}, seq l {space :::p, comp panel4:::::x}}, space :::p}}"
+			} ) {
+				name: "panel3"
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "l1"
+					"text": "非终结符(不能有空行)"
+				} )
+				add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+					name: "scrollPane4"
+					add( new FormComponent( "javax.swing.JTextArea" ) {
+						name: "nonTerminal"
+					} )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label6"
+					"text": "产生式"
+				} )
+				add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+					name: "scrollPane5"
+					add( new FormComponent( "javax.swing.JTextArea" ) {
+						name: "production"
+					} )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label2"
+					"text": "终结符"
+				} )
+				add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+					name: "scrollPane6"
+					add( new FormComponent( "javax.swing.JTextArea" ) {
+						name: "terminal"
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq {space :::p, par l {comp scrollPane1::l:::x, seq {comp label7:::p:582:p, space :0:35:x}, comp scrollPane2::::617:x}}};par l {seq {space :::x, comp label3:::p:289:p, space :0:582:x}}"
+					"$verticalGroup": "par l {seq l {space :p:21:p, comp scrollPane1:::p:117:p, space :::p, comp label7:::p::p, space :::p, comp scrollPane2::::589:x}};par l {seq {space :0:0:x, comp label3:::p::p, space :p:739:p}}"
+				} ) {
+					name: "panel4"
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label3"
+						"text": "源程序"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label7"
+						"text": "语法分析结果"
+					} )
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "scrollPane1"
+						add( new FormComponent( "javax.swing.JTextArea" ) {
+							name: "program"
+						} )
+					} )
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "scrollPane2"
+						add( new FormComponent( "javax.swing.JTextArea" ) {
+							name: "parse"
+						} )
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+					name: "scrollPane3"
+					add( new FormComponent( "javax.swing.JTextArea" ) {
+						name: "states"
+					} )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label1"
+					"text": "集族"
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "Center"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 1190, 840 )
+		} )
+	}
+}

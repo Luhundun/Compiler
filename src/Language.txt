@@ -1,0 +1,15 @@
+Terminal:
+a
+b
+c
+d
+e
+NonTerminal:
+S
+A
+B
+Production:
+S->aAcBe#
+A->b#
+A->Ab#
+B->d

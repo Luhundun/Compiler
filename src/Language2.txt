@@ -1,0 +1,16 @@
+Terminal:
+a
+b
+c
+d
+NonTerminal:
+E
+A
+B
+Production:
+E->aA#
+E->bB#
+A->cA#
+A->d#
+B->cB#
+B->d
